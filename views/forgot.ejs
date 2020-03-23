@@ -1,0 +1,22 @@
+<%- include("./partials/header.ejs") %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-5">
+			<form action="/forgot" method="POST">
+				<h3>Forgot Password</h3>
+				<hr>
+				<div class="form-group">
+					<label for="email">Email address</label>
+					<input type="email" class="form-control" autofocus name="email" placeholder="enter your email">
+				</div>
+				
+				<div class="form-group">
+					<input type="submit" class="btn btn-primary" value="Reset Password">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<%- include("./partials/footer.ejs") %>

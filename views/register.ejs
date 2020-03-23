@@ -1,0 +1,43 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+	<h1 id="centerText">Sign Up</h1>
+
+	<form action="/register" method="POST" id="setWidth">
+		<div class="form-group">
+			<input type="text" class="form-control" name="username" placeholder="username">
+		</div>
+
+		<div class="form-group">
+			<input type="password" class="form-control" name="password" placeholder="password">
+		</div>
+		
+		<div class="form-group">
+			<input type="text" class="form-control" name="firstName" placeholder="first name">
+		</div>
+		
+		<div class="form-group">
+			<input type="text" class="form-control" name="lastName" placeholder="last name">
+		</div>
+		
+		<div class="form-group">
+			<input type="email" class="form-control" name="email" placeholder="email">
+		</div>
+		
+		<div class="form-group">
+			<input type="text" class="form-control" name="avatar" placeholder="avatar url">
+		</div>
+		
+		<div class="form-group">
+			<input type="password" class="form-control" name="adminCode" placeholder="admin code - not required">
+		</div>
+
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary btn-md btn-block" id="setButtonWidth">Sign UP</button>
+		</div>
+
+		<a href="/campgrounds">Go Back</a>
+	</form>
+</div>
+
+<%- include("partials/footer.ejs") %>

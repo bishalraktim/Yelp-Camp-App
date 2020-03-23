@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YelpCamp</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+			  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="/landing.css">
+		
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async>
+
+		</script>
+		
+		<style>
+			a:focus {
+				outline: none;
+				box-shadow:none !important;
+			}
+		</style>
+		
+    </head>
+	
+    <body>
+    
+    <div class="container">
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+    
+    <div id="landing-header">
+ 		<h1>Welcome to YelpCamp!</h1>
+		<a id="fix-margin" href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
+		
+		<div id="form-size" class="mt-2">
+			<form action="/campgrounds" method="GET" class="form-inline">
+				<div class="form-group">
+					<input type="text" name="search" placeholder="Campground search ..." class="form-control">
+					<input type="submit" value="Search" class="form-control ml-2">
+				</div>
+			</form>
+		</div>
+		
+    </div>
+    
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+<%- include("partials/footer.ejs") %>

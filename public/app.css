@@ -1,0 +1,68 @@
+h1 {
+	color: green;
+}
+
+h2 {
+	color: purple;
+}
+
+h3 {
+	color: blue;
+}
+
+#fixSize {
+	width: 30%;
+}
+
+form {
+	margin: auto;
+	outline: none;
+}
+
+form, #set-width {
+	width: 100%;
+}
+
+#commentMargin {
+	margin-right: 84%;
+}
+
+#editComment {
+	margin-right: 80%;
+}
+
+.newCamp {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#centerText {
+	text-align: center;
+}
+
+#form-delete {
+	display: inline;
+}
+
+#comment-delete {
+	display: inline;
+}
+
+#setWidth {
+	width: 30%;
+}
+
+.btn, button, a, .form-control:focus {
+  outline: none;
+  box-shadow:none !important;
+}
+
+/* Google Maps */
+#map {
+	height: 500px;
+	width: 100%;
+}
+
+#fixMargin {
+	margin-bottom: 15px;
+}

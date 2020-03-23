@@ -1,0 +1,37 @@
+<%- include("../partials/header.ejs") %>
+
+<!-- <%= user %> <br><br>
+<%= campgrounds %> -->
+
+<div class="container">
+	<div class="row" id="fixMargin">
+		<div class="col-md-7">
+			<h1><%= user.firstName %> <%= user.lastName %></h1>
+			<div class="card">
+				<img src="<%= user.avatar %>" class="card-img-top">
+				<div class="card-body">
+					<div><a href="mailto: <%= user.email %>"><%= user.email %></a></div>
+					<p class="card-text text-justify">
+						<em>
+							Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin 
+							literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+							College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and 
+							going through the cites of the word in classical literature, discovered the undoubtable source.
+						</em>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-5">
+			<h2><%= user.username %>'s campgrounds:</h2>
+			<% campgrounds.forEach(function(campground){ %>
+				<ul>
+					<li><a href="/campgrounds/<%= campground._id %>" target="_blank"><%= campground.name %></a></li>
+				</ul>
+			<% }); %>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer.ejs") %>

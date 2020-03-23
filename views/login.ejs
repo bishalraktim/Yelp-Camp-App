@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+	<h1 id="centerText">Login</h1>
+	
+	<form action="/login" method="POST" id="setWidth">
+		<div class="form-group">
+			<input type="text" class="form-control" name="username" placeholder="username">
+		</div>
+
+		<div class="form-group">
+			<input type="password" class="form-control" name="password" placeholder="password">
+		</div>
+
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary btn-md btn-block" id="setButtonWidth">Submit</button>
+		</div>
+
+		<div>
+			<a href="/campgrounds">Go Back</a>
+			<a class="ml-3" href="/forgot">Forgot Password?</a>
+		</div>
+	</form>
+</div>
+
+<%- include("partials/footer.ejs") %>
