@@ -18,7 +18,7 @@ var commentRoutes 		= require("./routes/comments"),
 	campgroundRoutes 	= require("./routes/campgrounds"),
 	indexRoutes 		= require("./routes/index")
 
-mongoose.connect("process.env.CONNECT_DB", 
+mongoose.connect(process.env.CONNECT_DB, 
 				 {useUnifiedTopology: true, useNewUrlParser: true, 
 				  useFindAndModify: false, useCreateIndex: true});
 
