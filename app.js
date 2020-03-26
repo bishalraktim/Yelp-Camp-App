@@ -18,8 +18,9 @@ var commentRoutes 		= require("./routes/comments"),
 	campgroundRoutes 	= require("./routes/campgrounds"),
 	indexRoutes 		= require("./routes/index")
 
-mongoose.connect("mongodb://localhost/yelp_camp_v20", 
-				 {useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true});
+mongoose.connect(process.env.CONNECT_DB, 
+				 {useUnifiedTopology: true, useNewUrlParser: true, 
+				  useFindAndModify: false, useCreateIndex: true});
 
 
 app.set("view engine", "ejs");
