@@ -1,2 +1,4 @@
 # The file containing environment variables
 .env
+
+# The file containing database connection string
