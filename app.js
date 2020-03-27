@@ -18,7 +18,7 @@ var commentRoutes 		= require("./routes/comments"),
 	campgroundRoutes 	= require("./routes/campgrounds"),
 	indexRoutes 		= require("./routes/index")
 
-mongoose.connect("mongodb+srv://" + process.env.CONNECT_DB + "@yelp-camp-cluster-hpiyp.mongodb.net/test?retryWrites=true&w=majority", 
+mongoose.connect(process.env.CONNECT_DB, 
 				 {useUnifiedTopology: true, useNewUrlParser: true, 
 				  useFindAndModify: false, useCreateIndex: true});
 
