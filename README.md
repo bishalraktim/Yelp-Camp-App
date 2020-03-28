@@ -4,6 +4,10 @@ YelpCamp!
 
 ![](https://user-images.githubusercontent.com/41349472/47598483-35f7e780-d96a-11e8-98e3-53f2c6bdf20b.png)
 
+Live Demo
+---------
+For the live demonstration of the application, please visit https://immense-scrubland-26496.herokuapp.com/
+
 Features
 --------
 - Authentication:
@@ -79,3 +83,6 @@ Built with
 Platforms
 ---------
 - [goormIDE](https://example.com)
+- [Heroku](https://example.com)
+- [MongoDB Atlas](https://example.com)
+- [Cloudinary](https://example.com)
