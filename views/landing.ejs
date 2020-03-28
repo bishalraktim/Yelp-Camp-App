@@ -36,16 +36,14 @@
     
     <div id="landing-header">
  		<h1>Welcome to YelpCamp!</h1>
-		<a id="fix-margin" href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
+		<a href="/campgrounds" class="btn btn-lg btn-success ml-2">View All Campgrounds</a>
 		
-		<div id="form-size" class="mt-2">
-			<form action="/campgrounds" method="GET" class="form-inline">
-				<div class="form-group">
-					<input type="text" name="search" placeholder="Campground search ..." class="form-control">
-					<input type="submit" value="Search" class="form-control ml-2">
-				</div>
-			</form>
-		</div>
+		<form action="/campgrounds" method="GET" class="form-inline">
+			<div class="form-group">
+				<input type="text" name="search" placeholder="Campground search ..." class="form-control ml-2 mt-2">
+				<input type="submit" value="Search" class="form-control ml-2 mt-2">
+			</div>
+		</form>
 		
     </div>
     
