@@ -7,19 +7,12 @@ body {
 	z-index: 1;
 	position: relative;
 	padding-top: 40vh;
+	margin-left: 33.33%;
 }
 
-#form-size {
-	margin-left: 40%;
-}
-
-#fix-margin {
-	margin-left: 40%;
-}
 
 h1 {
 	color: #fff;
-	text-align: center;
 }
 
 
